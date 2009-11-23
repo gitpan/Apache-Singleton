@@ -1,0 +1,43 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.61.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 acee92919a392a2825a32b7004cea23e52a6f72f Changes
+SHA1 2f2e182c11b45216732c151a666a1b6151adc828 MANIFEST
+SHA1 6b7fb249d258df32d08c1465741bdccf87f9e30d META.yml
+SHA1 d9f8e3c4441e669487b5233496b4f017060417bd Makefile.PL
+SHA1 c694e6b7a28b100c6a477af36dc07d0b200dcbb9 README
+SHA1 9f126253fb39ec41a576abacb971277f5c3f527c lib/Apache/Singleton.pm
+SHA1 59a10aa556a7dfb024c4604e252cee1d0462e3a3 lib/Apache/Singleton/Process.pm
+SHA1 4fc6e86de183b7b6c415a72f917f7259c28ad626 lib/Apache/Singleton/Request.pm
+SHA1 3c1df8a086f535819467ab89b944e13a7ac60d4b t/00_compile.t
+SHA1 575d3eaa7ffc72d226421a96c69bf242be92cc81 t/01_singleton.t
+SHA1 fdf7f25fda54e27bd67f9461c9373246a4b5a8c6 t/02_multiclass.t
+SHA1 8bdf2c7879afcf6b88ba3b2bb0f74c7d0b3ed4e9 t/03_request.t
+SHA1 7effb836228f5ce0afa9cf91a5e7c1b47eec4d3d t/04_process.t
+SHA1 08935c2447b37fd0110ea29e00837b81944c0d7c t/05_request_mp2.t
+SHA1 46a3b211d86fc7da03762365c626e33fc9d9ad44 t/06_signature.t
+SHA1 be744f1752e7bbb5bf38e7e899acdbc943df736c t/lib/Apache.pm
+SHA1 17f648a7902e56e902a5753e255cdeaa8877d3b8 t/lib/Apache2/RequestUtil.pm
+SHA1 3182eeaa36b1c11ddd2ca3d57ae11780ad2d0a8b t/lib/Mock/Apache.pm
+SHA1 c8a0ecbfe110fb1c6ce6ecd2aa96a210476b473d t/lib/mod_perl.pm
+SHA1 dd998242b6632ee0ba45fb85fa8ebdb3539cecf6 t/lib/mod_perl2.pm
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG/MacGPG2 v2.0.12 (Darwin)
+
+iD8DBQFLCfnm+CqvSzp9LOwRAvwbAKCUJPDGG+35+bmVspHXFO3vcEWe8QCfbDdA
+o604D+8JGfAQ0JeMkxjR86s=
+=vZwU
+-----END PGP SIGNATURE-----
