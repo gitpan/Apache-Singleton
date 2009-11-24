@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Apache-Singleton
-version:            0.10
+version:            0.11
 abstract:           Singleton class for mod_perl
 author:
     - Michael Schout <mschout@cpan.org>
@@ -11,8 +11,9 @@ configure_requires:
 build_requires:
     ExtUtils::MakeMaker:  0
 requires:
-    mod_perl2:   1.9922
-    Test::More:  0.32
+    Apache::Test:  1.26
+    mod_perl2:     1.999022
+    Test::More:    0.32
 resources:
     bugtracker:  http://rt.cpan.org/NoAuth/Bugs.html?Dist=Apache-Singleton
     homepage:    http://github.com/mschout/apache-singleton/downloads

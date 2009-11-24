@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.61.
+signed via the Module::Signature module, version 0.55.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,30 +14,42 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 acee92919a392a2825a32b7004cea23e52a6f72f Changes
-SHA1 2f2e182c11b45216732c151a666a1b6151adc828 MANIFEST
-SHA1 6b7fb249d258df32d08c1465741bdccf87f9e30d META.yml
-SHA1 d9f8e3c4441e669487b5233496b4f017060417bd Makefile.PL
+SHA1 0125529f395bb45694f778c336c49d816db9df12 Changes
+SHA1 b8d8240fe9ac8aa1d0ede2444b9176c255c04ad6 MANIFEST
+SHA1 8776eee0b4ecba312616cb62999dfdfe8d6fb2ae MANIFEST.SKIP
+SHA1 73f617b18d4f62eea69096204bd1603cae6a53a0 META.yml
+SHA1 81e5d114ad5d8ffc0dac0e70aa05675315aaf0cd Makefile.PL
 SHA1 c694e6b7a28b100c6a477af36dc07d0b200dcbb9 README
-SHA1 9f126253fb39ec41a576abacb971277f5c3f527c lib/Apache/Singleton.pm
-SHA1 59a10aa556a7dfb024c4604e252cee1d0462e3a3 lib/Apache/Singleton/Process.pm
-SHA1 4fc6e86de183b7b6c415a72f917f7259c28ad626 lib/Apache/Singleton/Request.pm
-SHA1 3c1df8a086f535819467ab89b944e13a7ac60d4b t/00_compile.t
-SHA1 575d3eaa7ffc72d226421a96c69bf242be92cc81 t/01_singleton.t
-SHA1 fdf7f25fda54e27bd67f9461c9373246a4b5a8c6 t/02_multiclass.t
-SHA1 8bdf2c7879afcf6b88ba3b2bb0f74c7d0b3ed4e9 t/03_request.t
-SHA1 7effb836228f5ce0afa9cf91a5e7c1b47eec4d3d t/04_process.t
-SHA1 08935c2447b37fd0110ea29e00837b81944c0d7c t/05_request_mp2.t
-SHA1 46a3b211d86fc7da03762365c626e33fc9d9ad44 t/06_signature.t
-SHA1 be744f1752e7bbb5bf38e7e899acdbc943df736c t/lib/Apache.pm
-SHA1 17f648a7902e56e902a5753e255cdeaa8877d3b8 t/lib/Apache2/RequestUtil.pm
-SHA1 3182eeaa36b1c11ddd2ca3d57ae11780ad2d0a8b t/lib/Mock/Apache.pm
-SHA1 c8a0ecbfe110fb1c6ce6ecd2aa96a210476b473d t/lib/mod_perl.pm
-SHA1 dd998242b6632ee0ba45fb85fa8ebdb3539cecf6 t/lib/mod_perl2.pm
+SHA1 4eca9a9186e7e9f18ee2249612b7d37cdb3f6b85 lib/Apache/Singleton.pm
+SHA1 e228bb1f9db4d2b1b6136549341062055f410781 lib/Apache/Singleton/Process.pm
+SHA1 98ca4cb39f66a25e76826050c0a1a2aae63030f3 lib/Apache/Singleton/Request.pm
+SHA1 ae6746c529ae00390016998223e17e046c0bf402 t/TEST.PL
+SHA1 6a442ecd0fe896777fc6a9c15bcc77f58c6af0a6 t/apache/singleton/process/printer_instance.t
+SHA1 0125edfa8087ea24461c5a398ab50713b57969d0 t/apache/singleton/request/printer_instance.t
+SHA1 3c1df8a086f535819467ab89b944e13a7ac60d4b t/compile.t
+SHA1 0f70f2b5c15a93f9dd8c69395db4fd50eb42679b t/conf/extra.conf.in
+SHA1 cdbf5ce2a047f203dffd6b7476d5ae079fbf439d t/lib/Printer/Device/PerProcess.pm
+SHA1 eda1c07023b8de065df9315ae0473fc5c7e188bc t/lib/Printer/Device/PerRequest.pm
+SHA1 c1b5f84ff25a702d204912a659dcd03828827481 t/lib/Printer/PerProcess.pm
+SHA1 a498a952edc27a7be0ab8299b8bc77b7ca3b0538 t/lib/Printer/PerRequest.pm
+SHA1 be744f1752e7bbb5bf38e7e899acdbc943df736c t/mock/Apache.pm
+SHA1 17f648a7902e56e902a5753e255cdeaa8877d3b8 t/mock/Apache2/RequestUtil.pm
+SHA1 3182eeaa36b1c11ddd2ca3d57ae11780ad2d0a8b t/mock/Mock/Apache.pm
+SHA1 c8a0ecbfe110fb1c6ce6ecd2aa96a210476b473d t/mock/mod_perl.pm
+SHA1 dd998242b6632ee0ba45fb85fa8ebdb3539cecf6 t/mock/mod_perl2.pm
+SHA1 6906be1fbc63eec20c4385beddef2af2533d5106 t/multiclass.t
+SHA1 2217c3ebca493dddf5e60d2f75884718ef689467 t/process.t
+SHA1 24dadebd6a0799135df8885524b3fd9a0a20e148 t/request.t
+SHA1 030a93c377abdbf9645e7c5d4b6af950d0a1b26f t/request_mp2.t
+SHA1 7275132dcaf45ecfa79e8c4f04614bf56848a83f t/response/TestApache/Singleton/Process/printer_instance.pm
+SHA1 f64ff004c0a77e6e4f144496bdb10da9668efd77 t/response/TestApache/Singleton/Request/printer_instance.pm
+SHA1 15978707f609815b9d1234c883157a7872c046f0 t/response/TestApache/Singleton/request.pm
+SHA1 46a3b211d86fc7da03762365c626e33fc9d9ad44 t/signature.t
+SHA1 734b6548a02d5c2a810c0f89aae0bdef7fca8339 t/singleton.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG/MacGPG2 v2.0.12 (Darwin)
+Version: GnuPG v1.4.9 (GNU/Linux)
 
-iD8DBQFLCfnm+CqvSzp9LOwRAvwbAKCUJPDGG+35+bmVspHXFO3vcEWe8QCfbDdA
-o604D+8JGfAQ0JeMkxjR86s=
-=vZwU
+iEYEARECAAYFAksMXXgACgkQ+CqvSzp9LOwGugCgvXTpEJktquNlUpWt01ohrR9u
+C0wAoLMmA+5ZkeEi+NZ27ipyCMq4BUuU
+=wCO6
 -----END PGP SIGNATURE-----
