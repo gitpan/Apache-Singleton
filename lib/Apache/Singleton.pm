@@ -1,7 +1,11 @@
 package Apache::Singleton;
+BEGIN {
+  $Apache::Singleton::VERSION = '0.12';
+}
+
+# ABSTRACT: Singleton class for mod_perl
 
 use strict;
-our $VERSION = '0.11';
 
 unless ($ENV{MOD_PERL}) {
     require Apache::Singleton::Process;
@@ -19,7 +23,11 @@ sub instance {
 }
 
 sub _new_instance {
-    bless {}, shift;
+    my $class = shift;
+
+    my %args = (@_ && ref $_[0] eq 'HASH') ? %{ $_[0] } : @_;
+
+    bless { %args }, $class;
 }
 
 # Abstract methods, but compatible default
@@ -46,11 +54,17 @@ sub _set_instance {
 }
 
 1;
-__END__
+
+
+=pod
 
 =head1 NAME
 
 Apache::Singleton - Singleton class for mod_perl
+
+=head1 VERSION
+
+version 0.12
 
 =head1 SYNOPSIS
 
@@ -99,23 +113,7 @@ So you can use this module safely under non-mod_perl environment.
 
 =back
 
-=head1 SOURCE
-
-You can contribute or fork this project via github:
-
-http://github.com/mschout/apache-singleton
-
- git clone git://github.com/mschout/apache-singleton.git
-
-=head1 BUGS
-
-Please report any bugs or feature requests to
-bug-apache-singleton@rt.cpan.org, or through the web
-interface at http://rt.cpan.org/
-
-=head1 AUTHOR
-
-Michael Schout E<lt>mschout@cpan.orgE<gt>
+=head1 CREDITS
 
 Original idea by Matt Sergeant E<lt>matt@sergeant.orgE<gt> and Perrin
 Harkins E<lt>perrin@elem.comE<gt>.
@@ -123,29 +121,34 @@ Harkins E<lt>perrin@elem.comE<gt>.
 Initial implementation and versions 0.01 to 0.07 by Tatsuhiko Miyagawa
 E<lt>miyagawa@bulknews.netE<gt>.
 
-=head1 COPYRIGHT & LICENSE
-
-Copyright 2009 Michael Schout.
-
-This program is free software; you can redistribute it and/or modify it under
-the terms of either:
-
-=over 4
-
-=item *
-
-the GNU General Public License as published by the Free Software Foundation;
-either version 1, or (at your option) any later version, or
-
-=item *
-
-the Artistic License version 2.0.
-
-=back
-
 =head1 SEE ALSO
 
 L<Apache::Singleton::Request>, L<Apache::Singleton::Process>,
 L<Class::Singleton>
 
+=head1 SOURCE
+
+The development version is on github at L<http://github.com/mschout/apache-singleton>
+and may be cloned from L<git://github.com/mschout/apache-singleton.git>
+
+=head1 BUGS
+
+Please report any bugs or feature requests to bug-apache-singleton@rt.cpan.org or through the web interface at:
+ http://rt.cpan.org/Public/Dist/Display.html?Name=Apache-Singleton
+
+=head1 AUTHOR
+
+Michael Schout <mschout@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2009 by Michael Schout.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
 =cut
+
+
+__END__
+
